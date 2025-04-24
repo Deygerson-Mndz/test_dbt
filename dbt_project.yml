@@ -28,5 +28,5 @@ seeds:
   my_new_project:
     +catalog: catalog_dbtdemo
     +schema: schema_dbtdemo
-    +materialized: table
+    +materialized: seed
     +location_root: "dbfs:/user/hive/warehouse/dbt_deygersonmndz.db"
