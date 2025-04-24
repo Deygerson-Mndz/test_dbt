@@ -18,12 +18,12 @@ clean-targets:
 
 models:
   dbt_deygersonmndz:
-    +schema: dbt_deygersonmndz
+    +schema: test_dbt
     +materialized: table
     +location_root: "dbfs:/user/hive/warehouse/dbt_deygersonmndz.db"
 
 seeds:
   dbt_deygersonmndz:
-    +schema: dbt_deygersonmndz
+    +schema: test_dbt
     +materialized: seed
     +location_root: "dbfs:/user/hive/warehouse/dbt_deygersonmndz.db"
