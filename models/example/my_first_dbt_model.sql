@@ -5,7 +5,7 @@
 
     Try changing "table" to "view" below
 */
-{{ config(materialized="table") }}
+{{ config(materialized="view") }}
 
 with
     source_data as (
@@ -14,7 +14,7 @@ with
         union all
         select null as id
         union all
-        select 'Deygerson_test_dbt' as id
+        select 123456789 as id
 
     )
 
