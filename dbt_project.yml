@@ -1,4 +1,4 @@
-name: 'my_new_project'
+name: 'dbt_deygersonmndz'
 version: '1.0.0'
 config-version: 2
 
@@ -16,15 +16,14 @@ clean-targets:
   - "target"
   - "dbt_packages"
 
-# Configuración global para modelos y seeds
 models:
-  my_new_project:
+  dbt_deygersonmndz:
     +schema: dbt_deygersonmndz
     +materialized: table
     +location_root: "dbfs:/user/hive/warehouse/dbt_deygersonmndz.db"
 
 seeds:
-  my_new_project:
+  dbt_deygersonmndz:
     +schema: dbt_deygersonmndz
     +materialized: seed
     +location_root: "dbfs:/user/hive/warehouse/dbt_deygersonmndz.db"
