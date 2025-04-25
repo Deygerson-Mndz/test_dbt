@@ -1,0 +1,29 @@
+name: 'dbt_deygersonmndz'
+version: '1.0.0'
+config-version: 2
+
+profile: 'test_dbt'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  dbt_deygersonmndz:
+    +schema: test_dbt
+    +materialized: table
+    +location_root: "dbfs:/user/hive/warehouse/dbt_deygersonmndz.db"
+
+seeds:
+  dbt_deygersonmndz:
+    +schema: test_dbt
+    +materialized: seed
+    +location_root: "dbfs:/user/hive/warehouse/dbt_deygersonmndz.db"
