@@ -2,7 +2,7 @@ name: 'dbt_deygersonmndz'
 version: '1.0.0'
 config-version: 2
 
-profile: 'test_dbt'
+profile: 'my_dbt_project'
 
 model-paths: ["models"]
 analysis-paths: ["analyses"]
